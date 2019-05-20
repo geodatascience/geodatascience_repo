@@ -220,13 +220,12 @@ if __name__ == '__main__':
 
 I have used this worflow to generate several #hashtags clouds. Here are some examples :
 
-<span markdown="1"> <img src="./data/fr_emmanuelmacron.png" width=50% title="the most popular #hashtags related to 'emmanuel macron', generated on the 15st of May 2019"> </span>
-
+{::nomarkdown}
+<img src="./data/fr_emmanuelmacron.png" width=50% title="the most popular #hashtags related to 'emmanuel macron', generated on the 15st of May 2019">
 <img src="./data/fr_nathalieloiseau.png" width=50% markdown="1" title="the most popular #hashtags related to 'nathalie loiseau', generated on the 15st of May 2019">
-
 <img src="./data/us_donaldtrump.png" width=50% markdown="1" title="the most popular #hashtags related to 'donald trump', generated on the 15st of May 2019">
-
 <img src="./data/fr_epitech.png" width=50% markdown="1" title="the most popular #hashtags related to <<epitech>>, generated on the 15st of May 2019">
+{:/}
 
 I hope you enjoyed reading this article. Feel free to give me some feedbacks.
 

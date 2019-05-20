@@ -90,7 +90,7 @@ class FilterObj(object):
 
 def getFrequencyDictForText(fulltext, filterobj):
     result = {}
-    for textblock in re.split('[\s\n,\.]+', fulltext):
+    for textblock in re.split('[\s\n,\.\)\(\"]+', fulltext):
         if filterobj(textblock):
             val = result.get(textblock.lower()[1:], 0)
             result[textblock.lower()[1:]] = val + 1
@@ -115,7 +115,7 @@ if __name__ == '__main__':
 	# global parameters
 	PATHTOTHEJSONFILE = "./credentials.json"
 	TWEETSFILEPATH = "./tweets.txt"
-	MASKIMAGEPATH = "./temporary/cm.png"
+	MASKIMAGEPATH = "./temporary/test.png"
 	OUTPUTPATH = "output.png"
 	LANG = "fr"
 

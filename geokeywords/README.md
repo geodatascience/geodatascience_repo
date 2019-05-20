@@ -2,11 +2,11 @@
 # What We Tweet About ...
 Python
 
-I recently discovered a very nice python lib called [wordcloud](https://amueller.github.io/word_cloud/ "WordCloud for Python documentation") and I wanted to play with it. After a couple of days of experimentation, I wrote this tutorial that shows how to use `wordcloud` to generate a cloud of the most frequent **#hashtags**, extracted from twitter, related to a search query.
+I recently discovered a very nice python lib called [wordcloud](https://amueller.github.io/word_cloud/ "WordCloud for Python documentation") and I wanted to play with it. I am writing this tutorial, after a couple of days of experimentation, to explain how to use `wordcloud` to generate a cloud of the most frequent **#hashtags**, extracted from twitter, related to a search query.
 
 ![gilets jaunes](./data/fr_giletsjaunes.png "the most popular #hashtags related to 'gilets jaunes', generated on the 20th of May 2019")
 
-At the end of this tutorial, you should be able to generate the image above - the words on the image match the **#hashtags** related to "*gilets jaunes*" ([yellow vest](https://en.wikipedia.org/wiki/Yellow_vests_movement)).
+At the end of this tutorial, you should be able to generate the image above -- the words on the image match the **#hashtags** related to "*gilets jaunes*" ([yellow vest](https://en.wikipedia.org/wiki/Yellow_vests_movement)).
 
 The main steps can be listed as follows :
 
@@ -27,7 +27,7 @@ NB: You would probably make a great use of [virtualenv](https://virtualenv.pypa.
 
 ## Step 1. Search query execution (through the Twitter API)
 
-You need to apply for access tokens from the twitter dev platform to be able to use their research API - the standard (free) plan is sufficient for this tutorial (please refer to [their website](https://developer.twitter.com/en/apply-for-access "All new developers must apply for a developer account to access Twitter APIs. Once approved, you can begin to use our standard APIs and our new premium APIs.") and come back when you are done). When you will get your credentials - `CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN`, `ACCESS_SECRET` - save them as a json file somewhere in your disk.
+You need to apply for access tokens from the twitter dev platform to be able to use their research API -- the standard (free) plan is sufficient for this tutorial (please refer to [their website](https://developer.twitter.com/en/apply-for-access "All new developers must apply for a developer account to access Twitter APIs. Once approved, you can begin to use our standard APIs and our new premium APIs.") and come back when you are done). Save your credentials - `CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN`, `ACCESS_SECRET` - as a json file somewhere in your disk.
 
 I suggest you the following function - `collectAndSaveTweets` - to collect and save your tweets. Here is a simple description of the most important parameters of `collectAndSaveTweets`:
 
@@ -114,7 +114,9 @@ def collectAndSaveTweets(
 	tweetfile.close()
 ```
 
-Everything should be fine from here if you have properly created your access tokens i.e. you should be able to try some queries and see the results in a text file (the language is very important - see [here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes "List of ISO 639 codes") for details)
+Everything should be fine from here if you have properly created your access tokens.
+
+You should be able to try some queries and see the results in a text file (remember that the language is very important - see [here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes "List of ISO 639 codes") for details)
 
 ## Step 2. Hashtags extraction (+ Frequency map construction)
 
@@ -145,14 +147,14 @@ We are going to call this function on the full content of our tweets file and ge
 
 ## Step 3. Wordcloud creation (from a frequency map) + Image generation
 
-The function `makeImage` is the last ingredient for our cloud creation process. It takes a frequency map and turn it into an image with the help of `wordcloud`. Below, a simple description of the most important parameters of `makeImage`:
+The function `makeImage` is the last ingredient for our cloud creation process. It takes a frequency map and turns it into an image with the help of `wordcloud`. Below, a simple description of the most important parameters of `makeImage`:
 
-* `tweetsfrequencymap` : the frequency map of the hashtags related to our query. They should have processed according to our needs
-* `pathtomask` : the path to the black an white image that will be used to bound the clouds (the map of France in the example above)
+* `tweetsfrequencymap` : the frequency map of the hashtags related to our query. They should have processed been according to our needs (see the previous section)
+* `pathtomask` : the path to the black an white image that will be used to bound the cloud (the map of France in the example above)
 * `outputpath` : the output path for the resulting image
 * `backgroundcolor` : the backgroud color of the image
 * `contourcolor` : the color of the boundaries
-* `contourwith` : thickness of the boundaries
+* `contourwith` : the thickness of the boundaries
 
 
 ```python
@@ -179,7 +181,7 @@ def makeImage(
 	wc.to_file(outputpath)
 ```
 
-Voila! Put all these functions and classes in a python file and add the following lines of code at the end. You are ready to roll !
+Voila! Put all these functions (and the class definition of `FilterObj`) in a python file and add the following lines of code at the end. You are ready to roll !
 
 ```python
 
@@ -218,13 +220,13 @@ if __name__ == '__main__':
 
 I have used this worflow to generate several #hashtags clouds. Here are some examples :
 
-<img src="./data/fr_emmanuelmacron.png" width=50% title="the most popular #hashtags related to 'emmanuel macron', generated on the 15st of May 2019">
+<img src="./data/fr_emmanuelmacron.png" width=50% mardown="1" title="the most popular #hashtags related to 'emmanuel macron', generated on the 15st of May 2019">
 
-<img src="./data/fr_nathalieloiseau.png" width=50% title="the most popular #hashtags related to 'nathalie loiseau', generated on the 15st of May 2019">
+<img src="./data/fr_nathalieloiseau.png" width=50% mardown="1" title="the most popular #hashtags related to 'nathalie loiseau', generated on the 15st of May 2019">
 
-<img src="./data/us_donaldtrump.png" width=50% title="the most popular #hashtags related to 'donald trump', generated on the 15st of May 2019">
+<img src="./data/us_donaldtrump.png" width=50% mardown="1" title="the most popular #hashtags related to 'donald trump', generated on the 15st of May 2019">
 
-<img src="./data/fr_epitech.png" width=50% title="the most popular #hashtags related to <<epitech>>, generated on the 15st of May 2019">
+<img src="./data/fr_epitech.png" width=50% mardown="1" title="the most popular #hashtags related to <<epitech>>, generated on the 15st of May 2019">
 
 I hope you enjoyed reading this article. Feel free to give me some feedbacks.
 

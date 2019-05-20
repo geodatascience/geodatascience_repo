@@ -149,7 +149,7 @@ We are going to call this function on the full content of our tweets file and ge
 
 The function `makeImage` is the last ingredient for our cloud creation process. It takes a frequency map and turns it into an image with the help of `wordcloud`. Below, a simple description of the most important parameters of `makeImage`:
 
-* `tweetsfrequencymap` : the frequency map of the hashtags related to our query. They should have processed been according to our needs (see the previous section)
+* `tweetsfrequencymap` : the frequency map of the hashtags related to our query. They should have been processed according to our needs (see the previous section)
 * `pathtomask` : the path to the black an white image that will be used to bound the cloud (the map of France in the example above)
 * `outputpath` : the output path for the resulting image
 * `backgroundcolor` : the backgroud color of the image
@@ -220,13 +220,13 @@ if __name__ == '__main__':
 
 I have used this worflow to generate several #hashtags clouds. Here are some examples :
 
-<img src="./data/fr_emmanuelmacron.png" width=50% mardown="1" title="the most popular #hashtags related to 'emmanuel macron', generated on the 15st of May 2019">
+<img src="./data/fr_emmanuelmacron.png" width=50% markdown="1" title="the most popular #hashtags related to 'emmanuel macron', generated on the 15st of May 2019">
 
-<img src="./data/fr_nathalieloiseau.png" width=50% mardown="1" title="the most popular #hashtags related to 'nathalie loiseau', generated on the 15st of May 2019">
+<img src="./data/fr_nathalieloiseau.png" width=50% markdown="1" title="the most popular #hashtags related to 'nathalie loiseau', generated on the 15st of May 2019">
 
-<img src="./data/us_donaldtrump.png" width=50% mardown="1" title="the most popular #hashtags related to 'donald trump', generated on the 15st of May 2019">
+<img src="./data/us_donaldtrump.png" width=50% markdown="1" title="the most popular #hashtags related to 'donald trump', generated on the 15st of May 2019">
 
-<img src="./data/fr_epitech.png" width=50% mardown="1" title="the most popular #hashtags related to <<epitech>>, generated on the 15st of May 2019">
+<img src="./data/fr_epitech.png" width=50% markdown="1" title="the most popular #hashtags related to <<epitech>>, generated on the 15st of May 2019">
 
 I hope you enjoyed reading this article. Feel free to give me some feedbacks.
 

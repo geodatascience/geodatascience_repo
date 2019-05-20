@@ -220,7 +220,7 @@ if __name__ == '__main__':
 
 I have used this worflow to generate several #hashtags clouds. You will find some examples at the end of the document.
 
-I you have enjoyed this article. Feel free to send us some comment.
+I you have enjoyed this article. Feel free to send us some comments.
 
 Patrick S. Kanmeugne *for geodatascience.io*
 

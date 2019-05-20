@@ -4,7 +4,7 @@ Python
 
 I recently discovered a very nice python lib called [wordcloud](https://amueller.github.io/word_cloud/ "WordCloud for Python documentation") and I wanted to play with it. After a couple of days of experimentation, I wrote this tutorial that shows how to use `wordcloud` to generate a cloud of the most frequent **#hashtags**, extracted from twitter, related to a search query.
 
-<img src="./data/fr_giletsjaunes.png" width=50% title="the most popular #hashtags related to 'gilets jaunes', generated on the 20th of May 2019">
+![gilets jaunes](./data/fr_giletsjaunes.png "the most popular #hashtags related to 'gilets jaunes', generated on the 20th of May 2019")
 
 At the end of this tutorial, you should be able to generate the image above - the words on the image match the **#hashtags** related to "*gilets jaunes*" ([yellow vest](https://en.wikipedia.org/wiki/Yellow_vests_movement)).
 

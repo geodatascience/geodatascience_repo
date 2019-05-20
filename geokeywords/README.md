@@ -27,9 +27,9 @@ NB: You would probably make a great use of [virtualenv](https://virtualenv.pypa.
 
 ## Step 1. Search query execution (through the Twitter API)
 
-You need to apply for access tokens from the twitter dev platform to be able to use their research API - the standard (free) plan is sufficient for this tutorial. Please refer to [their website](https://developer.twitter.com/en/apply-for-access "All new developers must apply for a developer account to access Twitter APIs. Once approved, you can begin to use our standard APIs and our new premium APIs.") and come back when you are done. You can save them - `CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN`, `ACCESS_SECRET` - as a json file.
+You need to apply for access tokens from the twitter dev platform to be able to use their research API - the standard (free) plan is sufficient for this tutorial (please refer to [their website](https://developer.twitter.com/en/apply-for-access "All new developers must apply for a developer account to access Twitter APIs. Once approved, you can begin to use our standard APIs and our new premium APIs.") and come back when you are done). When you will get your credentials - `CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN`, `ACCESS_SECRET` - save them as a json file somewhere in your disk.
 
-I suggest you the following function - `collectAndSaveTweets` - to collect and save your preferred tweets. Here is a simple description of the most important parameters of `collectAndSaveTweets`:
+I suggest you the following function - `collectAndSaveTweets` - to collect and save your tweets. Here is a simple description of the most important parameters of `collectAndSaveTweets`:
 
 * `searchtoken` : the keywords to search for
 * `credentialfilepath` : you credential file path (`json` format)
@@ -114,13 +114,13 @@ def collectAndSaveTweets(
 	tweetfile.close()
 ```
 
-Everything should be fine from here if you have properly created your access tokens - you should be able to try some queries and see the results in a text file (the language is very important - see [here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes "List of ISO 639 codes") for details)
+Everything should be fine from here if you have properly created your access tokens i.e. you should be able to try some queries and see the results in a text file (the language is very important - see [here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes "List of ISO 639 codes") for details)
 
 ## Step 2. Hashtags extraction (+ Frequency map construction)
 
-In order to use [wordcloud](https://amueller.github.io/word_cloud/ "WordCloud for Python documentation"), you need to generate a word frequency map. My suggestion is to use the function `getFrequencyDictForText` below. The function takes a text and a filter object -- defined by `FilterObj` class -- as parameters, and builds the frequency map for the hashtags (in the input text) that satisfy a given filtering condition.
+In order to use [wordcloud](https://amueller.github.io/word_cloud/ "WordCloud for Python documentation"), you will need to generate a word frequency map. My suggestion is to use the function `getFrequencyDictForText` below. The function takes a text and a filter object -- defined by `FilterObj` class -- as parameters and builds the frequency map for the hashtags (in the input text) that satisfy a given filtering condition.
 
-You have all the freedom to define your filtering condition in the `__call__` function of the `FilterObj` object.
+You will have all the freedom to define your filtering condition in the `__call__` function of the `FilterObj` object.
 
 ```python
 import re
@@ -216,7 +216,7 @@ if __name__ == '__main__':
 	)
 ```
 
-We have used this worflow to generate several #hashtags clouds. Here are some examples :
+I have used this worflow to generate several #hashtags clouds. Here are some examples :
 
 <img src="./data/fr_emmanuelmacron.png" width=50% title="the most popular #hashtags related to 'emmanuel macron', generated on the 15st of May 2019">
 

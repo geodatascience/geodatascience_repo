@@ -10,9 +10,9 @@ At the end of this tutorial, you should be able to generate the image above - th
 
 The main steps can be listed as follows :
 
-1.   **Collecting the results of a search query through the Twitter API**
-2.   **Extracting the hashtags and build a frequency map as a dictionnary**
-3.   **Building the wordcloud from a frequency map and save it into a png image**
+1.   **Search query execution (through the Twitter API)**
+2.   **Hashtags extraction (+ Frequency map construction)**
+3.   **Wordcloud creation (from a frequency map) + Image generation**
 
 ## First things first : the python environment
 
@@ -25,7 +25,7 @@ First of all, I have to admit that [wordcloud](https://amueller.github.io/word_c
 
 NB: You would probably make a great use of [virtualenv](https://virtualenv.pypa.io/en/latest/ "virtualenv is a tool to create isolated Python environments") in other to work in a dedicated and clean environment.
 
-## Step 1. Collecting the results of a search query
+## Step 1. Search query execution (through the Twitter API)
 
 You need to apply for access tokens from the twitter dev platform to be able to use their research API - the standard (free) plan is sufficient for this tutorial. Please refer to [their website](https://developer.twitter.com/en/apply-for-access "All new developers must apply for a developer account to access Twitter APIs. Once approved, you can begin to use our standard APIs and our new premium APIs.") and come back when you are done. You can save them - `CONSUMER_KEY`, `CONSUMER_SECRET`, `ACCESS_TOKEN`, `ACCESS_SECRET` - as a json file.
 
@@ -116,7 +116,7 @@ def collectAndSaveTweets(
 
 Everything should be fine from here if you have properly created your access tokens - you should be able to try some queries and see the results in a text file (the language is very important - see [here](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes "List of ISO 639 codes") for details)
 
-## Step 2. Extracting the hashtags and build a frequency map
+## Step 2. Hashtags extraction (+ Frequency map construction)
 
 In order to use [wordcloud](https://amueller.github.io/word_cloud/ "WordCloud for Python documentation"), you need to generate a word frequency map. My suggestion is to use the function `getFrequencyDictForText` below. The function takes a text and a filter object -- defined by `FilterObj` class -- as parameters, and builds the frequency map for the hashtags (in the input text) that satisfy a given filtering condition.
 
@@ -143,7 +143,7 @@ class FilterObj(object):
 
 We are going to call this function on the full content of our tweets file and generate a frequency map. Then we will process the frequency map in other to generate the cloud that we want. This is where `wordcloud` comes into the game.
 
-## Step 3. Building the wordcloud and save it into a png image.
+## Step 3. Wordcloud creation (from a frequency map) + Image generation
 
 The function `makeImage` is the last ingredient for our cloud creation process. It takes a frequency map and turn it into an image with the help of `wordcloud`. Below, a simple description of the most important parameters of `makeImage`:
 

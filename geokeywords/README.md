@@ -231,9 +231,6 @@ Patrick S. Kanmeugne *for geodatascience.io*
 <img src="./data/fr_epitech.png" width=50% markdown="1" title="the most popular #hashtags related to <<epitech>>, generated on the 15st of May 2019"/>
 {:/}
 
-I hope you have enjoyed reading this article. Feel free to give me some feedbacks.
-
-
 
 
 

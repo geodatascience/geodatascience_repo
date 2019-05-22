@@ -3,110 +3,110 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://geodatascience.github.io/about/</loc>
+    <loc>https://geodatascience.github.io/geodatascience_repo/about/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://geodatascience.github.io/fr/about/"
+                href="https://geodatascience.github.io/geodatascience_repo/fr/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://geodatascience.github.io/about/"
+                href="https://geodatascience.github.io/geodatascience_repo/about/"
                 />
   </url>
   
   <url>
-    <loc>https://geodatascience.github.io/blog/</loc>
+    <loc>https://geodatascience.github.io/geodatascience_repo/blog/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://geodatascience.github.io/categories/</loc>
-    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://geodatascience.github.io/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://geodatascience.github.io/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://geodatascience.github.io/</loc>
+    <loc>https://geodatascience.github.io/geodatascience_repo/categories/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://geodatascience.github.io/fr/"
+                href="https://geodatascience.github.io/geodatascience_repo/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://geodatascience.github.io/"
+                href="https://geodatascience.github.io/geodatascience_repo/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://geodatascience.github.io/blog/welcome/</loc>
+    <loc>https://geodatascience.github.io/geodatascience_repo/</loc>
+    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://geodatascience.github.io/geodatascience_repo/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://geodatascience.github.io/geodatascience_repo/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://geodatascience.github.io/geodatascience_repo/blog/welcome/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://geodatascience.github.io/categories/misc/</loc>
+    <loc>https://geodatascience.github.io/geodatascience_repo/categories/misc/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://geodatascience.github.io/categories/presentation/</loc>
+    <loc>https://geodatascience.github.io/geodatascience_repo/categories/presentation/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://geodatascience.github.io/about/</loc>
+    <loc>https://geodatascience.github.io/geodatascience_repo/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://geodatascience.github.io/contact/</loc>
+    <loc>https://geodatascience.github.io/geodatascience_repo/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://geodatascience.github.io/fr/contact/"
+                href="https://geodatascience.github.io/geodatascience_repo/fr/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://geodatascience.github.io/contact/"
+                href="https://geodatascience.github.io/geodatascience_repo/contact/"
                 />
   </url>
   
   <url>
-    <loc>https://geodatascience.github.io/contact/_index.pl/</loc>
+    <loc>https://geodatascience.github.io/geodatascience_repo/contact/_index.pl/</loc>
   </url>
   
   <url>
-    <loc>https://geodatascience.github.io/tags/</loc>
+    <loc>https://geodatascience.github.io/geodatascience_repo/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://geodatascience.github.io/fr/tags/"
+                href="https://geodatascience.github.io/geodatascience_repo/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://geodatascience.github.io/tags/"
+                href="https://geodatascience.github.io/geodatascience_repo/tags/"
                 />
   </url>
   

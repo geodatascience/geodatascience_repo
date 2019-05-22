@@ -1,4 +1,4 @@
-baseurl                 = "https://geodatascience.github.io/"
+baseurl                 = "https://geodatascience.github.io/geodatascience_repo"
 DefaultContentLanguage  = "en"
 title                   = "GeoDataScience"
 theme                   = "hugo-future-imperfect-slim"

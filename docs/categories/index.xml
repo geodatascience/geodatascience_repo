@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on GeoDataScience</title>
-    <link>https://geodatascience.github.io/categories/</link>
+    <link>https://geodatascience.github.io/geodatascience_repo/categories/</link>
     <description>Recent content in Categories on GeoDataScience</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 20 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://geodatascience.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://geodatascience.github.io/geodatascience_repo/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>misc</title>
-      <link>https://geodatascience.github.io/categories/misc/</link>
+      <link>https://geodatascience.github.io/geodatascience_repo/categories/misc/</link>
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://geodatascience.github.io/categories/misc/</guid>
+      <guid>https://geodatascience.github.io/geodatascience_repo/categories/misc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>presentation</title>
-      <link>https://geodatascience.github.io/categories/presentation/</link>
+      <link>https://geodatascience.github.io/geodatascience_repo/categories/presentation/</link>
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://geodatascience.github.io/categories/presentation/</guid>
+      <guid>https://geodatascience.github.io/geodatascience_repo/categories/presentation/</guid>
       <description></description>
     </item>
     

@@ -111,25 +111,25 @@ disableLanguages        = [""]
 
   [[menu.main]]
     name              = "About"
-    url               = "/about/"
+    url               = "/geodatascience_repo/about/"
     identifier        = "far fa-id-card"
     weight            = 2
 
   [[menu.main]]
     name              = "Blog"
-    url               = "/blog/"
+    url               = "/geodatascience_repo/blog/"
     identifier        = "far fa-newspaper"
     weight            = 3
 
   [[menu.main]]
     name              = "Categories"
-    url               = "/categories/"
+    url               = "/geodatascience_repo/categories/"
     identifier        = "fas fa-sitemap"
     weight            = 5
 
   [[menu.main]]
     name              = "Contact"
-    url               = "/contact/"
+    url               = "/geodatascience_repo/contact/"
     identifier        = "far fa-envelope"
     weight            = 6
 
@@ -155,25 +155,25 @@ disableLanguages        = [""]
 
     [[Languages.fr.menu.main]]
       name              = "About"
-      url               = "/about/"
+      url               = "/geodatascience_repo/about/"
       identifier        = "far fa-id-card"
       weight            = 2
 
     [[Languages.fr.menu.main]]
       name              = "Blog"
-      url               = "/blog/"
+      url               = "/geodatascience_repo/blog/"
       identifier        = "far fa-newspaper"
       weight            = 3
 
     [[Languages.fr.menu.main]]
       name              = "Catégories"
-      url               = "/categories/"
+      url               = "/geodatascience_repo/categories/"
       identifier        = "fas fa-sitemap"
       weight            = 5
 
     [[Languages.fr.menu.main]]
       name              = "Contact"
-      url               = "/contact/"
+      url               = "/geodatascience_repo/contact/"
       identifier        = "far fa-envelope"
       weight            = 6
 

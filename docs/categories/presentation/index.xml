@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>presentation on GeoDataScience</title>
-    <link>https://example.com/categories/presentation/</link>
+    <link>https://geodatascience.github.io/geodatascience_repo/categories/presentation/</link>
     <description>Recent content in presentation on GeoDataScience</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 20 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/categories/presentation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://geodatascience.github.io/geodatascience_repo/categories/presentation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome</title>
-      <link>https://example.com/blog/welcome/</link>
+      <link>https://geodatascience.github.io/geodatascience_repo/blog/welcome/</link>
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/blog/welcome/</guid>
+      <guid>https://geodatascience.github.io/geodatascience_repo/blog/welcome/</guid>
       <description> Welcome Welcome to Geodatascience Blog !
 Geodatascience is a blog about spatial data and programming.
 We want to show and explain it through examples (especially webmapping applications) about:

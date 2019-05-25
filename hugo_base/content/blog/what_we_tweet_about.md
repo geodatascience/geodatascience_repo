@@ -1,5 +1,5 @@
 +++
-author = "PSK"
+author = "Patrick S. Kanmeugne"
 categories = ["Wordcloud", "Hastag", "Twitter", "Python"]
 date = "2019-05-18"
 description = ""
@@ -19,7 +19,7 @@ Python
 
 I recently discovered a very nice python lib called [wordcloud](https://amueller.github.io/word_cloud/ "WordCloud for Python documentation") and I wanted to play with it. I am writing this tutorial, after a couple of days of experimentation, to explain how to use `wordcloud` to generate a cloud of the most frequent **#hashtags**, extracted from twitter, related to a search query.
 
-![gilets jaunes](../../img/2019/05/fr_giletsjaunes.png "the most popular #hashtags related to 'gilets jaunes', generated on the 20th of May 2019")
+<img src="../../img/2019/05/fr_giletsjaunes.png" width=50% markdown="1" title="the most popular #hashtags related to 'gilets jaunes', generated on the 20th of May 2019"/>
 
 At the end of this tutorial, you should be able to generate the image above -- the words on the image match the **#hashtags** related to "*gilets jaunes*" ([yellow vest](https://en.wikipedia.org/wiki/Yellow_vests_movement)).
 

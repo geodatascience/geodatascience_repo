@@ -24,6 +24,17 @@ We want to show and explain it through examples (especially webmapping applicati
     </item>
     
     <item>
+      <title>What We Tweet About ...</title>
+      <link>https://geodatascience.github.io/geodatascience_repo/blog/what_we_tweet_about/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://geodatascience.github.io/geodatascience_repo/blog/what_we_tweet_about/</guid>
+      <description>What We Tweet About &amp;hellip; Python
+I recently discovered a very nice python lib called wordcloud and I wanted to play with it. I am writing this tutorial, after a couple of days of experimentation, to explain how to use wordcloud to generate a cloud of the most frequent #hashtags, extracted from twitter, related to a search query.
+At the end of this tutorial, you should be able to generate the image above &amp;ndash; the words on the image match the #hashtags related to &amp;ldquo;gilets jaunes&amp;rdquo; (yellow vest).</description>
+    </item>
+    
+    <item>
       <title>About Hugo</title>
       <link>https://geodatascience.github.io/geodatascience_repo/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>

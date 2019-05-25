@@ -73,6 +73,35 @@
   </url>
   
   <url>
+    <loc>https://geodatascience.github.io/geodatascience_repo/categories/hastag/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://geodatascience.github.io/geodatascience_repo/categories/python/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://geodatascience.github.io/geodatascience_repo/categories/twitter/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://geodatascience.github.io/geodatascience_repo/blog/what_we_tweet_about/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://geodatascience.github.io/geodatascience_repo/categories/wordcloud/</loc>
+    <lastmod>2019-05-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://geodatascience.github.io/geodatascience_repo/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>

@@ -3,4 +3,4 @@ articles and tutorials on geographic data science
 
 ## [geokeywords](./geokeywords "Word Clouds from Twitter")
 
-## 404 ERRORS ON SITE, NEED TO BE FIXED.
+## 25 May 2019: duplicates in url fixed. Site is working fine. 

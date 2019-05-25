@@ -42,7 +42,7 @@ type = "post"
   * ```type```: type de post. Normalement toujours ```"post"```
 * Détails concernant les images:
   * ```featuredpath```: votre image titre doit se trouver dans le dossier annuel puis mensuel correspondant. Par exemple, pour mai 2019, votre image doit se trouver dans ```./hugo_base/static/img/2019/05```. Bien entendu il faudra créer des dossiers pour les années et mois suivants, sauf à changer de méthode (*renseignements à prendre*)
-  * images dans votre post: les placer dans le même dossier que votre post et y faire référence dans votre fichier MarkDown avec une chemin relatif et au format MarkDown ou balise HTML (*à vérifier si cela fonctionne bien*)
+  * images dans votre post: ***Solution temporaire à améliorer***; indiquer le chemin relatif par ```../../img/[year]/[month]/filename.png```
 * Une fois cela fait, suivez la procédure suivante en étant à la racine de votre répertoire local GitHub:
 ```bash
 cd hugo_base

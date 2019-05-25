@@ -105,31 +105,31 @@ disableLanguages        = [""]
   # Identifier prepends a Font Awesome icon to the menu item
   [[menu.main]]
     name              = "Home"
-    url               = "/"
+    url               = ""
     identifier        = "fas fa-home"
     weight            = 1
 
   [[menu.main]]
     name              = "About"
-    url               = "/geodatascience_repo/about/"
+    url               = "about/"
     identifier        = "far fa-id-card"
     weight            = 2
 
   [[menu.main]]
     name              = "Blog"
-    url               = "/geodatascience_repo/blog/"
+    url               = "blog/"
     identifier        = "far fa-newspaper"
     weight            = 3
 
   [[menu.main]]
     name              = "Categories"
-    url               = "/geodatascience_repo/categories/"
+    url               = "categories/"
     identifier        = "fas fa-sitemap"
     weight            = 5
 
   [[menu.main]]
     name              = "Contact"
-    url               = "/geodatascience_repo/contact/"
+    url               = "contact/"
     identifier        = "far fa-envelope"
     weight            = 6
 
@@ -149,31 +149,31 @@ disableLanguages        = [""]
 
     [[Languages.fr.menu.main]]
       name              = "Accueil"
-      url               = "/"
+      url               = ""
       identifier        = "fas fa-home"
       weight            = 1
 
     [[Languages.fr.menu.main]]
       name              = "About"
-      url               = "/geodatascience_repo/about/"
+      url               = "about/"
       identifier        = "far fa-id-card"
       weight            = 2
 
     [[Languages.fr.menu.main]]
       name              = "Blog"
-      url               = "/geodatascience_repo/blog/"
+      url               = "blog/"
       identifier        = "far fa-newspaper"
       weight            = 3
 
     [[Languages.fr.menu.main]]
       name              = "Catégories"
-      url               = "/geodatascience_repo/categories/"
+      url               = "categories/"
       identifier        = "fas fa-sitemap"
       weight            = 5
 
     [[Languages.fr.menu.main]]
       name              = "Contact"
-      url               = "/geodatascience_repo/contact/"
+      url               = "contact/"
       identifier        = "far fa-envelope"
       weight            = 6
 

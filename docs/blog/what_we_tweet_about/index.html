@@ -8,9 +8,8 @@
 
 
 
-  <meta name="generator" content="Hugo 0.55.5" />
-  
-<meta itemprop="name" content="What We Tweet About ...">
+  <meta name="generator" content="Hugo 0.56.0" />
+  <meta itemprop="name" content="What We Tweet About ...">
 <meta itemprop="description" content="What We Tweet About &hellip; Python
 I recently discovered a very nice python lib called wordcloud and I wanted to play with it. I am writing this tutorial, after a couple of days of experimentation, to explain how to use wordcloud to generate a cloud of the most frequent #hashtags, extracted from twitter, related to a search query.
 At the end of this tutorial, you should be able to generate the image above &ndash; the words on the image match the #hashtags related to &ldquo;gilets jaunes&rdquo; (yellow vest).">
@@ -30,8 +29,8 @@ I recently discovered a very nice python lib called wordcloud and I wanted to pl
 At the end of this tutorial, you should be able to generate the image above &ndash; the words on the image match the #hashtags related to &ldquo;gilets jaunes&rdquo; (yellow vest)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://geodatascience.github.io/geodatascience_repo/blog/what_we_tweet_about/" />
-<meta property="article:published_time" content="2019-05-18T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-05-18T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2019-05-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-05-18T00:00:00+00:00" />
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="What We Tweet About ..."/>
@@ -285,85 +284,86 @@ At the end of this tutorial, you should be able to generate the image above &nda
 <li><code>searchtoken</code> : the keywords to search for</li>
 <li><code>credentialfilepath</code> : you credential file path (<code>json</code> format)</li>
 <li><code>tweetfilepath</code> : where you want to save your tweets (<code>text</code> file)</li>
-<li><code>language</code> : search for tweet in this specific language</li>
-</ul>
+
+<li><p><code>language</code> : search for tweet in this specific language</p>
 
 <pre><code class="language-python">import json
 from twython import Twython
 def collectAndSaveTweets(
-    searchtoken,
-    credentialfilepath,
-    tweetfilepath,
-    maxattempts,
-    nboftweetstobefetch,
-    language
+	searchtoken,
+	credentialfilepath,
+	tweetfilepath,
+	maxattempts,
+	nboftweetstobefetch,
+	language
 ):
-    # credential parameters
-    with open(credentialfilepath, mode='r') as f:
-        d = json.load(f)
+	# credential parameters
+	with open(credentialfilepath, mode='r') as f:
+		d = json.load(f)
 
-    # session object
-    api = Twython(d['CONSUMER_KEY'], d['CONSUMER_SECRET'],
-               d['ACCESS_TOKEN'], d['ACCESS_SECRET'])
+	# session object
+	api = Twython(d['CONSUMER_KEY'], d['CONSUMER_SECRET'],
+           d['ACCESS_TOKEN'], d['ACCESS_SECRET'])
 
-    # Check if the connexion is successful
-    api.verify_credentials()
+	# Check if the connexion is successful
+	api.verify_credentials()
 
-    # file that holds the tweets
-    tweetfile = open(tweetfilepath, 'w')
+	# file that holds the tweets
+	tweetfile = open(tweetfilepath, 'w')
 
-    # tweet count
-    tweets = 0
+	# tweet count
+	tweets = 0
 
-    # apply a search query using the API
-    for i in range(0, maxattempts):
+	# apply a search query using the API
+	for i in range(0, maxattempts):
 
-        if(nboftweetstobefetch &lt; tweets):
-            break
+		if(nboftweetstobefetch &lt; tweets):
+			break
 
-        # Query Twitter:
-        if(0 == i):
-            results = api.search(
-                q=searchtoken,
-                count=1000,
-                lang=language,
-                tweet_mode='extended'
-            )
-        else:
-            # After the first call we should have
-            # max_id from result of previous call.
-            # Pass it in query. Use the extended mode to get
-            # all the content of the tweet and not a truncated version.
-            results = api.search(
-                q=searchtoken,
-                include_entities='true',
-                max_id=next_max_id,
-                tweet_mode='extended'
-            )
+		# Query Twitter:
+		if(0 == i):
+			results = api.search(
+				q=searchtoken,
+				count=1000,
+				lang=language,
+				tweet_mode='extended'
+			)
+		else:
+			# After the first call we should have
+			# max_id from result of previous call.
+			# Pass it in query. Use the extended mode to get
+			# all the content of the tweet and not a truncated version.
+			results = api.search(
+				q=searchtoken,
+				include_entities='true',
+				max_id=next_max_id,
+				tweet_mode='extended'
+			)
 
-        # Save the returned tweets :
-        # Tweets content are truncated
-        # (even in the extended mode) when retweeted.
-        # If it is the case, the full text of the
-        # original tweet is in the retweeted_status
-        # field of the JSON response.
-        for result in results['statuses']:
-            if 'retweeted_status' in result:
-                tweetfile.write(result['retweeted_status']['full_text'])
-            else:
-                tweetfile.write(result['full_text'])
-            tweets += 1
+		# Save the returned tweets :
+		# Tweets content are truncated
+		# (even in the extended mode) when retweeted.
+		# If it is the case, the full text of the
+		# original tweet is in the retweeted_status
+		# field of the JSON response.
+		for result in results['statuses']:
+			if 'retweeted_status' in result:
+				tweetfile.write(result['retweeted_status']['full_text'])
+			else:
+				tweetfile.write(result['full_text'])
+			tweets += 1
 
-        # Get the next max_id to iterate over the results:
-        try:
-            next_results_url_params = results['search_metadata']['next_results']
-            next_max_id = next_results_url_params.split('max_id=')[1].split('&amp;')[0]
-        except:
-            break
+		# Get the next max_id to iterate over the results:
+		try:
+			next_results_url_params = results['search_metadata']['next_results']
+			next_max_id = next_results_url_params.split('max_id=')[1].split('&amp;')[0]
+		except:
+			break
 
-    # close the file thats holds the tweets
-    tweetfile.close()
-</code></pre>
+	# close the file thats holds the tweets
+	tweetfile.close()
+</code></pre></li>
+</ul>
 
 <p>Everything should be fine from here if you have properly created your access tokens.</p>
 
@@ -377,12 +377,12 @@ def collectAndSaveTweets(
 
 <pre><code class="language-python">import re
 def getFrequencyDictForText(fulltext, filterobj):
-    result = {}
-    for textblock in re.split('[\s\n,\.]+', fulltext):
-        if filterobj(textblock):
-            val = result.get(textblock.lower()[1:], 0)
-            result[textblock.lower()[1:]] = val + 1
-    return result
+	result = {}
+	for textblock in re.split('[\s\n,\.]+', fulltext):
+		if filterobj(textblock):
+			val = result.get(textblock.lower()[1:], 0)
+			result[textblock.lower()[1:]] = val + 1
+	return result
 
 # The filter object (we can easily modify it according to our need).
 class FilterObj(object):
@@ -405,66 +405,67 @@ class FilterObj(object):
 <li><code>outputpath</code> : the output path for the resulting image</li>
 <li><code>backgroundcolor</code> : the backgroud color of the image</li>
 <li><code>contourcolor</code> : the color of the boundaries</li>
-<li><code>contourwith</code> : the thickness of the boundaries</li>
-</ul>
+
+<li><p><code>contourwith</code> : the thickness of the boundaries</p>
 
 <pre><code class="language-python">import numpy as np
 import wordcloud
 from PIL import Image
 def makeImage(
-    tweetsfrequencymap,
-    pathtomask,
-    outputpath,
-    contourwidth=3,
-    backgroundcolor='white',
-    contourcolor='black'
+tweetsfrequencymap,
+pathtomask,
+outputpath,
+contourwidth=3,
+backgroundcolor='white',
+contourcolor='black'
 ):
-    mask = np.array(Image.open(pathtomask, mode='r'))
-    wc = WordCloud(
-        background_color=background_color,
-        mask=mask,
-        contour_width=contourwidth,
-        contour_color=contourcolor
-    )
-    # generate word cloud
-    wc.generate_from_frequencies(tweetsfrequencymap)
-    wc.to_file(outputpath)
-</code></pre>
+	mask = np.array(Image.open(pathtomask, mode='r'))
+	wc = WordCloud(
+		background_color=background_color,
+		mask=mask,
+		contour_width=contourwidth,
+		contour_color=contourcolor
+	)
+	# generate word cloud
+	wc.generate_from_frequencies(tweetsfrequencymap)
+	wc.to_file(outputpath)
+</code></pre></li>
+</ul>
 
 <p>Voila! Put all these functions (and the class definition of <code>FilterObj</code>) in a python file and add the following lines of code at the end. You are ready to roll !</p>
 
 <pre><code class="language-python">
 if __name__ == '__main__':
 
-    # keywords to search for
-    SEARCHTOKEN = input('enter the search token:')
+	# keywords to search for
+	SEARCHTOKEN = input('enter the search token:')
 
-    # global parameters
-    PATHTOTHEJSONFILE = &quot;./credentials.json&quot;
-    TWEETSFILEPATH = &quot;./tweets.txt&quot;
-    MASKIMAGEPATH = &quot;./temporary/test.png&quot;
-    OUTPUTPATH = &quot;output.png&quot;
-    LANG = &quot;fr&quot;
+	# global parameters
+	PATHTOTHEJSONFILE = &quot;./credentials.json&quot;
+	TWEETSFILEPATH = &quot;./tweets.txt&quot;
+	MASKIMAGEPATH = &quot;./temporary/test.png&quot;
+	OUTPUTPATH = &quot;output.png&quot;
+	LANG = &quot;fr&quot;
 
-    # collect and save the tweets
-    collectAndSaveTweets(
-        SEARCHTOKEN,
-        PATHTOTHEJSONFILE,
-        TWEETSFILEPATH,
-        language=LANG
-    )
+	# collect and save the tweets
+	collectAndSaveTweets(
+		SEARCHTOKEN,
+		PATHTOTHEJSONFILE,
+		TWEETSFILEPATH,
+		language=LANG
+	)
 
-    # build a frequency map from the tweets
-    tweetfile = open(TWEETSFILEPATH, mode='r')
-    fulltext = tweetfile.read()
-    filterobj = FilterObj(*re.split('\s', SEARCHTOKEN))
+	# build a frequency map from the tweets
+	tweetfile = open(TWEETSFILEPATH, mode='r')
+	fulltext = tweetfile.read()
+	filterobj = FilterObj(*re.split('\s', SEARCHTOKEN))
 
-    # generate cloud and save into image
-    makeImage(
-        getFrequencyDictForText(fulltext, filterobj),
-        maskimagepath=MASKIMAGEPATH,
-        outputpath=OUTPUTPATH
-    )
+	# generate cloud and save into image
+	makeImage(
+		getFrequencyDictForText(fulltext, filterobj),
+		maskimagepath=MASKIMAGEPATH,
+		outputpath=OUTPUTPATH
+	)
 </code></pre>
 
 <p>I have used this worflow to generate several #hashtags clouds. You will find some examples at the end of the document.</p>
@@ -539,6 +540,28 @@ if __name__ == '__main__':
 
       </section>
       <header>
+        <h1><a href="/geodatascience_repo/blog/an_introduction_to_geopandas/">An Introduction to GeoPandas</a></h1>
+        <time class="published" datetime="">July 31, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <section>
+        
+
+      </section>
+      <header>
+        <h1><a href="/geodatascience_repo/blog/an_introduction_to_geopandas/">An Introduction to GeoPandas</a></h1>
+        <time class="published" datetime="">July 31, 2019</time>
+      </header>
+    </article>
+    
+    <article class="mini-post">
+      <section>
+        
+
+      </section>
+      <header>
         <h1><a href="/geodatascience_repo/blog/welcome/">Welcome</a></h1>
         <time class="published" datetime="">May 20, 2019</time>
       </header>
@@ -571,6 +594,21 @@ if __name__ == '__main__':
           
           <li>
             
+              <a href="/geodatascience_repo/categories/python/">python<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/geodatascience_repo/categories/geopandas/">geopandas<span class="count">2</span></a>
+            
+          
+          <li>
+            
+              <a href="/geodatascience_repo/categories/shapefile/">shapefile<span class="count">2</span></a>
+            
+          
+          <li>
+            
               <a href="/geodatascience_repo/categories/hastag/">hastag<span class="count">1</span></a>
             
           
@@ -582,11 +620,6 @@ if __name__ == '__main__':
           <li>
             
               <a href="/geodatascience_repo/categories/presentation/">presentation<span class="count">1</span></a>
-            
-          
-          <li>
-            
-              <a href="/geodatascience_repo/categories/python/">python<span class="count">1</span></a>
             
           
           <li>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on GeoDataScience</title>
-    <link>https://geodatascience.github.io/geodatascience_repo/blog/</link>
-    <description>Recent content in Blog on GeoDataScience</description>
+    <title>GeoPandas on GeoDataScience</title>
+    <link>https://geodatascience.github.io/geodatascience_repo/categories/geopandas/</link>
+    <description>Recent content in GeoPandas on GeoDataScience</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://geodatascience.github.io/geodatascience_repo/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://geodatascience.github.io/geodatascience_repo/categories/geopandas/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -31,29 +31,6 @@
       <description>We are going to explore some geospatial data from the european Urban Atlas with the Python package GeoPandas. Here is a short description of these data from this website:
  The European Urban Atlas provides reliable, inter-comparable, high-resolution land use maps for over [&amp;hellip;] 800 Functional Urban Area (FUA) and their surroundings (more than 50.000 inhabitants) for the 2012 reference year in EEA39.
  Data for the city of Lyon, France, is downloaded from the Urban Atlas 2012 page and then uncompressed in a local data/ directory.</description>
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>https://geodatascience.github.io/geodatascience_repo/blog/welcome/</link>
-      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://geodatascience.github.io/geodatascience_repo/blog/welcome/</guid>
-      <description> Welcome Welcome to Geodatascience Blog !
-Geodatascience is a blog about spatial data and programming.
-We want to show and explain it through examples (especially webmapping applications) about:
- GIS (Geographic Information System) possibilities Python spatial libraries Python dynamic and interactive visualization libraries &amp;hellip;  </description>
-    </item>
-    
-    <item>
-      <title>What We Tweet About ...</title>
-      <link>https://geodatascience.github.io/geodatascience_repo/blog/what_we_tweet_about/</link>
-      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://geodatascience.github.io/geodatascience_repo/blog/what_we_tweet_about/</guid>
-      <description>What We Tweet About &amp;hellip; Python
-I recently discovered a very nice python lib called wordcloud and I wanted to play with it. I am writing this tutorial, after a couple of days of experimentation, to explain how to use wordcloud to generate a cloud of the most frequent #hashtags, extracted from twitter, related to a search query.
-At the end of this tutorial, you should be able to generate the image above &amp;ndash; the words on the image match the #hashtags related to &amp;ldquo;gilets jaunes&amp;rdquo; (yellow vest).</description>
     </item>
     
   </channel>

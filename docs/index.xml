@@ -6,10 +6,32 @@
     <description>Recent content on GeoDataScience</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://geodatascience.github.io/geodatascience_repo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>An Introduction to GeoPandas</title>
+      <link>https://geodatascience.github.io/geodatascience_repo/blog/an_introduction_to_geopandas/</link>
+      <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://geodatascience.github.io/geodatascience_repo/blog/an_introduction_to_geopandas/</guid>
+      <description>We are going to explore some geospatial data from the european Urban Atlas with the Python package GeoPandas. Here is a short description of these data from this website:
+ The European Urban Atlas provides reliable, inter-comparable, high-resolution land use maps for over [&amp;hellip;] 800 Functional Urban Area (FUA) and their surroundings (more than 50.000 inhabitants) for the 2012 reference year in EEA39.
+ Data for the city of Lyon, France, is downloaded from the Urban Atlas 2012 page and then uncompressed in a local data/ directory.</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to GeoPandas</title>
+      <link>https://geodatascience.github.io/geodatascience_repo/blog/an_introduction_to_geopandas/</link>
+      <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://geodatascience.github.io/geodatascience_repo/blog/an_introduction_to_geopandas/</guid>
+      <description>We are going to explore some geospatial data from the european Urban Atlas with the Python package GeoPandas. Here is a short description of these data from this website:
+ The European Urban Atlas provides reliable, inter-comparable, high-resolution land use maps for over [&amp;hellip;] 800 Functional Urban Area (FUA) and their surroundings (more than 50.000 inhabitants) for the 2012 reference year in EEA39.
+ Data for the city of Lyon, France, is downloaded from the Urban Atlas 2012 page and then uncompressed in a local data/ directory.</description>
+    </item>
     
     <item>
       <title>Welcome</title>
@@ -43,15 +65,6 @@ At the end of this tutorial, you should be able to generate the image above &amp
       <description>Hugo is a static site engine written in Go.
 It makes use of a variety of open source projects including:
  Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://geodatascience.github.io/geodatascience_repo/contact/_index.pl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://geodatascience.github.io/geodatascience_repo/contact/_index.pl/</guid>
-      <description></description>
     </item>
     
   </channel>

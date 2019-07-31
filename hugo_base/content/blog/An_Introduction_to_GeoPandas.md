@@ -124,7 +124,7 @@ add_basemap(ax, zoom=10);
 plt.axis('off');
 ```
 
-![png](../../img/20190731_01/output_14_0.png)
+![png](../../img/2019/07/output_14_0.jpg)
 
 We can see on this map the urban area and the metropolitan region of Lyon (the inner boundary).
 
@@ -425,7 +425,7 @@ plt.gca().invert_yaxis()
 ```
 
 
-![png](../../img/20190731_01/output_34_0.png)
+![png](../../img/2019/07/output_34_0.jpg)
 
 
 
@@ -439,7 +439,7 @@ plt.axis('off');
 ```
 
 
-![png](../../img/20190731_01/output_35_0.png)
+![png](../../img/2019/07/output_35_0.jpg)
 
 Let us just select a few of all the geographic types, in order exhibit the vegetation or water areas
 
@@ -454,7 +454,7 @@ plt.axis('off');
 ```
 
 
-![png](../../img/20190731_01/output_36_0.png)
+![png](../../img/2019/07/output_36_0.jpg)
 
 
 Now we are going to compute and plot the population density. 
@@ -520,7 +520,7 @@ add_basemap(ax, url='http://tile.stamen.com/toner-background/tileZ/tileX/tileY.p
 plt.axis('off');
 ```
 
-![png](../../img/20190731_01/output_31_0.png)
+![png](../../img/2019/07/output_31_0.jpg)
 
 ## Conclusion
 

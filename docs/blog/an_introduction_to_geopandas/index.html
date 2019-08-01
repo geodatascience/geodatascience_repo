@@ -17,7 +17,7 @@
 
 <meta itemprop="datePublished" content="2019-07-31T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-07-31T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1216">
+<meta itemprop="wordCount" content="1198">
 
 
 
@@ -688,29 +688,6 @@ plt.axis('off');
 <p>Now we are going to compute and plot the population density.</p>
 
 <h2 id="population-density">Population density</h2>
-
-<p>Total population:</p>
-
-<pre><code class="language-python">lyon_UA2012.Pop2012.sum()
-</code></pre>
-
-<pre><code>1897722
-</code></pre>
-
-<p>Total area ($m^2$):</p>
-
-<pre><code class="language-python">lyon_UA2012.Shape_Area.sum()
-</code></pre>
-
-<pre><code>3669727106.711693
-</code></pre>
-
-<pre><code class="language-python">pop_dens = 1e6 * lyon_UA2012.Pop2012.sum() / lyon_UA2012.Shape_Area.sum()
-pop_dens
-</code></pre>
-
-<pre><code>517.1289158066248
-</code></pre>
 
 <p>In order to create a choropleth map, we first compute the density in number of inhabitants per $km^2$:</p>
 

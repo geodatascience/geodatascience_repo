@@ -458,47 +458,6 @@ Now we are going to compute and plot the population density.
 
 ## Population density
 
-Total population:
-
-
-```python
-lyon_UA2012.Pop2012.sum()
-```
-
-
-
-
-    1897722
-
-
-
-Total area ($m^2$):
-
-
-```python
-lyon_UA2012.Shape_Area.sum()
-```
-
-
-
-
-    3669727106.711693
-
-
-
-
-```python
-pop_dens = 1e6 * lyon_UA2012.Pop2012.sum() / lyon_UA2012.Shape_Area.sum()
-pop_dens
-```
-
-
-
-
-    517.1289158066248
-
-
-
 In order to create a choropleth map, we first compute the density in number of inhabitants per $km^2$:
 
 

@@ -407,7 +407,8 @@ lyon_UA2012[['CODE2012', 'ITEM2012']].dtypes
 lyon_UA2012[['CODE2012', 'ITEM2012']] = lyon_UA2012[['CODE2012', 'ITEM2012']].astype('category')
 ```
 
-From Pandas' documentation:
+From Pandas' documentation:  
+
 > Categoricals are a pandas data type corresponding to categorical variables in statistics. A categorical variable takes on a limited, and usually fixed, number of possible values (categories; levels in R). Examples are gender, social class, blood type, country affiliation, observation time or rating via Likert scales.
 
 Also we can look at the global distribution of the geographic types over all the urban area:

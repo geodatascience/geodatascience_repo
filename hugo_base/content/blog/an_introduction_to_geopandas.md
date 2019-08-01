@@ -124,7 +124,7 @@ add_basemap(ax, zoom=10);
 plt.axis('off');
 ```
 
-![jpg](img/2019/07/01/output_14_0.jpg)
+<img src="../../img/2019/07/01/output_14_0.jpg" width=100% />
 
 We can see on this map the urban area and the metropolitan region of Lyon (the inner boundary).
 
@@ -206,17 +206,17 @@ lyon_UA2012.head(2)
 
 
 
-For each geometry, we have the following attributes:
-- `COUNTRY`: country code, always `FR`
-- `CITIES`: main city, always `Lyon`
-- `FUA_OR_CIT`: urban area code, always `FR003L2`
-- `CODE2012`: code for the geographic type of the area covered by the geometry
-- `ITEM2012`: label of the geographic type of the area covered by the geometry
-- `PROD_DATE`: production date, always `2015`
-- `IDENT`: unique area identifier
-- `Shape_Leng`: maximum length of the geometry (m)
-- `Shape_Area`: area of the geometry (m2)
-- `Pop2012`: population living in the area covered by the geometry
+For each geometry, we have the following attributes:  
+- `COUNTRY`: country code, always `FR`  
+- `CITIES`: main city, always `Lyon`  
+- `FUA_OR_CIT`: urban area code, always `FR003L2`  
+- `CODE2012`: code for the geographic type of the area covered by the geometry  
+- `ITEM2012`: label of the geographic type of the area covered by the geometry  
+- `PROD_DATE`: production date, always `2015`  
+- `IDENT`: unique area identifier  
+- `Shape_Leng`: maximum length of the geometry (m)  
+- `Shape_Area`: area of the geometry (m2)  
+- `Pop2012`: population living in the area covered by the geometry  
 
 ### Geographic types
 
@@ -425,9 +425,7 @@ plt.gca().invert_yaxis()
 ```
 
 
-![jpg](img/2019/07/01/output_34_0.jpg)
-
-
+<img src="../../img/2019/07/01/output_34_0.jpg" width=100% />
 
 
 Or, we can look at the spatial distribution:
@@ -439,7 +437,7 @@ plt.axis('off');
 ```
 
 
-![jpg](img/2019/07/01/output_35_0.jpg)
+<img src="../../img/2019/07/01/output_35_0.jpg" width=100% />
 
 Let us just select a few of all the geographic types, in order exhibit the vegetation or water areas
 
@@ -454,8 +452,7 @@ plt.axis('off');
 ```
 
 
-![jpg](img/2019/07/01/output_36_0.jpg)
-
+<img src="../../img/2019/07/01/output_36_0.jpg" width=100% />
 
 Now we are going to compute and plot the population density. 
 
@@ -520,10 +517,10 @@ add_basemap(ax, url='http://tile.stamen.com/toner-background/tileZ/tileX/tileY.p
 plt.axis('off');
 ```
 
-![jpg](img/2019/07/01/output_31_0.jpg)
+<img src="../../img/2019/07/01/output_31_0.jpg" width=100% />
 
 ## Conclusion
 
 GeoPandas is a really good package built on top of another great package: Pandas. It is open-source and incredibly handy. It allows you to explore/visualize/analyze geospatial data with a lot of ease, within the PyData ecosystem. 
 
-On the downside, I would say that it may appear a little bit slow sometimes when dealing with larger datasets. From what I understand, this is something that is addressed by the geopandas-cython development branch?? Also, there is a Dask-Geopandas [initiative](https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2019), which sounds terrific!!
+On the downside, it may appear to be slow when dealing with larger datasets. From what I understand, this is something that is addressed by the geopandas-cython development branch?? Also, there is a Dask-Geopandas [initiative](https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2019), which sounds terrific!

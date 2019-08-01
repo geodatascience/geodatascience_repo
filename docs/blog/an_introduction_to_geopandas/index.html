@@ -17,7 +17,7 @@
 
 <meta itemprop="datePublished" content="2019-07-31T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-07-31T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1222">
+<meta itemprop="wordCount" content="1216">
 
 
 
@@ -385,7 +385,7 @@ add_basemap(ax, zoom=10);
 plt.axis('off');
 </code></pre>
 
-<p><img src="img/2019/07/01/output_14_0.jpg" alt="jpg" /></p>
+<p><img src="../../img/2019/07/01/output_14_0.jpg" width=100% /></p>
 
 <p>We can see on this map the urban area and the metropolitan region of Lyon (the inner boundary).</p>
 
@@ -462,16 +462,16 @@ plt.axis('off');
 </table>
 </div>
 
-<p>For each geometry, we have the following attributes:
-- <code>COUNTRY</code>: country code, always <code>FR</code>
-- <code>CITIES</code>: main city, always <code>Lyon</code>
-- <code>FUA_OR_CIT</code>: urban area code, always <code>FR003L2</code>
-- <code>CODE2012</code>: code for the geographic type of the area covered by the geometry
-- <code>ITEM2012</code>: label of the geographic type of the area covered by the geometry
-- <code>PROD_DATE</code>: production date, always <code>2015</code>
-- <code>IDENT</code>: unique area identifier
-- <code>Shape_Leng</code>: maximum length of the geometry (m)
-- <code>Shape_Area</code>: area of the geometry (m2)
+<p>For each geometry, we have the following attributes:<br />
+- <code>COUNTRY</code>: country code, always <code>FR</code><br />
+- <code>CITIES</code>: main city, always <code>Lyon</code><br />
+- <code>FUA_OR_CIT</code>: urban area code, always <code>FR003L2</code><br />
+- <code>CODE2012</code>: code for the geographic type of the area covered by the geometry<br />
+- <code>ITEM2012</code>: label of the geographic type of the area covered by the geometry<br />
+- <code>PROD_DATE</code>: production date, always <code>2015</code><br />
+- <code>IDENT</code>: unique area identifier<br />
+- <code>Shape_Leng</code>: maximum length of the geometry (m)<br />
+- <code>Shape_Area</code>: area of the geometry (m2)<br />
 - <code>Pop2012</code>: population living in the area covered by the geometry</p>
 
 <h3 id="geographic-types">Geographic types</h3>
@@ -662,7 +662,7 @@ ax.set_xlabel('Area (km2), log scale');
 plt.gca().invert_yaxis()
 </code></pre>
 
-<p><img src="img/2019/07/01/output_34_0.jpg" alt="jpg" /></p>
+<p><img src="../../img/2019/07/01/output_34_0.jpg" width=100% /></p>
 
 <p>Or, we can look at the spatial distribution:</p>
 
@@ -671,7 +671,7 @@ lyon_UA2012.plot(figsize=figsize_L, column='ITEM2012', cmap=glasbey, legend=True
 plt.axis('off');
 </code></pre>
 
-<p><img src="img/2019/07/01/output_35_0.jpg" alt="jpg" /></p>
+<p><img src="../../img/2019/07/01/output_35_0.jpg" width=100% /></p>
 
 <p>Let us just select a few of all the geographic types, in order exhibit the vegetation or water areas</p>
 
@@ -683,7 +683,7 @@ add_basemap(ax, url='http://tile.stamen.com/toner-background/tileZ/tileX/tileY.p
 plt.axis('off');
 </code></pre>
 
-<p><img src="img/2019/07/01/output_36_0.jpg" alt="jpg" /></p>
+<p><img src="../../img/2019/07/01/output_36_0.jpg" width=100% /></p>
 
 <p>Now we are going to compute and plot the population density.</p>
 
@@ -726,13 +726,13 @@ add_basemap(ax, url='http://tile.stamen.com/toner-background/tileZ/tileX/tileY.p
 plt.axis('off');
 </code></pre>
 
-<p><img src="img/2019/07/01/output_31_0.jpg" alt="jpg" /></p>
+<p><img src="../../img/2019/07/01/output_31_0.jpg" width=100% /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 
 <p>GeoPandas is a really good package built on top of another great package: Pandas. It is open-source and incredibly handy. It allows you to explore/visualize/analyze geospatial data with a lot of ease, within the PyData ecosystem.</p>
 
-<p>On the downside, I would say that it may appear a little bit slow sometimes when dealing with larger datasets. From what I understand, this is something that is addressed by the geopandas-cython development branch?? Also, there is a Dask-Geopandas <a href="https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2019">initiative</a>, which sounds terrific!!</p>
+<p>On the downside, it may appear to be slow when dealing with larger datasets. From what I understand, this is something that is addressed by the geopandas-cython development branch?? Also, there is a Dask-Geopandas <a href="https://github.com/geopandas/geopandas/wiki/Google-Summer-of-Code-2019">initiative</a>, which sounds terrific!</p>
 
   </div>
   <footer>

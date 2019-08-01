@@ -22,7 +22,7 @@ From the compressed archive, we got 3 [shapefiles](https://en.wikipedia.org/wiki
 - FR003L2_LYON_UA2012
 - FR003L2_LYON_UA2012_Boundary
 
-This post is mainly inspired from [this](https://github.com/jorisvandenbossche/geopandas-demo/blob/master/geopandas_demo.ipynb) notebook by [Joris Van den Bossche](https://twitter.com/jorisvdbossche?lang=fr), the main developper of [geopandas](https://geopandas.readthedocs.io/en/latest/). 
+This post is mainly inspired from [this](https://github.com/jorisvandenbossche/geopandas-demo/blob/master/geopandas_demo.ipynb) notebook by [Joris Van den Bossche](https://twitter.com/jorisvdbossche?lang=fr), a core developper of [geopandas](https://geopandas.readthedocs.io/en/latest/). 
 
 Let's start by describing how we created the environment, and import the packages.
 
